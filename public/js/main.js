@@ -1,6 +1,6 @@
 
 
-document.addEventListener("DOMContentLoaded", function () {
+
    
 const menuButton = document.getElementById('menuButton');
 const dropdownMenu = document.getElementById('dropdownMenu');
@@ -411,6 +411,8 @@ lengthSlider.value = 20;
       // Restore the default styles
       restoreStyles();
       apAddButton.textContent = 'Add';
+      
+     
    }
 
    // Function to edit a To-Do item
@@ -447,7 +449,9 @@ lengthSlider.value = 20;
       applyStyles();
       statsContainer.style.display = "none";
       mainHeaderAp.style.display = "none";
-      todoListContainer.style.display = "none";  // Hide the todo list container
+      todoListContainer.style.display = "none";
+      
+     
    }
 
    // Delete Todo Item
@@ -481,8 +485,6 @@ lengthSlider.value = 20;
       document.body.removeChild(tempInput);
 
       alert('Password copied to clipboard!');
-
-
    }
 
 
@@ -524,7 +526,8 @@ lengthSlider.value = 20;
       }
    }
 
-})
+
+
 
 
 // Function to apply the theme based on the selected theme name
